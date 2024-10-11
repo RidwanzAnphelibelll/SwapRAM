@@ -22,5 +22,7 @@ if [ -e "$swapfile" ]; then
     reset='\033[0m'
     echo -e "${green}Swap RAM uninstalled successfully.${reset}"
 else
+    red='\033[0;31m'
+    reset='\033[0m'
     echo -e "${red}Swap RAM does not exist.${reset}"
 fi
